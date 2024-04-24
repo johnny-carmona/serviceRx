@@ -1,0 +1,28 @@
+{
+  "name": "react-service-rx",
+  "version": "1.0.6",
+  "description": "Simple rxjs service to use with react through hooks",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "rxjs",
+    "hooks"
+  ],
+  "author": "Johnny Carmona",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "rxjs": "^7.3.0"
+  },
+  "files": [
+    "/dist"
+  ],
+  "devDependencies": {
+    "@types/react": "^17.0.20"
+  }
+}
