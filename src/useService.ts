@@ -6,9 +6,9 @@ export function useService<Type>(service: ServiceRx<Type>): [Type, Function] {
 
     useEffect(() => {
         const observers = service.state$.subscribe(setState);
-        return function cleanup() {
+        return () => {
             observers.unsubscribe();
-        }
+        };
     })
 
     return [state, service.update];
